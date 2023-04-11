@@ -31,19 +31,12 @@ def tpreorder(root):
 
 #creating a root
 root=Node(10)
-''' following is the tree after above statement
-        10
-    / \
-    None None'''
+
         
 root.left=Node(33)
 root.right=Node(45)
 
-''' 2 and 3 become left and right children of 1
-        10
-        / \
-        33     45
-    '''
+
   
 root.left.left=Node(11)
 root.left.right=Node(20)
