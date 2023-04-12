@@ -13,14 +13,14 @@ def binary_search(arr,x):
             return mid
         
         elif arr[mid]>x:
-            right=left-1
+            right=mid-1
         elif arr[mid]<x:
-            left=right+1
+            left=mid+1
 
     else:
         return None        
 
-arr=[5,8,3,7,10,33]
+arr=[5,8,3,7,10,33,20]
 x=7   # element to search in arr
 result=binary_search(arr,x)
 
