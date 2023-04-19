@@ -16,9 +16,7 @@ def calculate(request):
             'result': result
         }
 
-       # return render(request, 'res.html', context)
-
-    #return render(request, 'cal.html')
+  
 
         return render(request, 'cal.html',{'result':result})
 
