@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather App</title>
+</head>
+<body>
+    <h1>Weather App</h1>
+    <form method="get" action="{% url 'weather' %}">
+        <input type="text" name="city" placeholder="Enter city name" />
+        <input type="submit" value="Get Weather" />
+    </form>
+    {% if weather_data %}
+        <h2>Weather for {{ weather_data.name }}, {{ weather_data.sys.country }}</h2>
+        <p>Temperature: {{ weather_data.main.temp }} &#8451;</p>
+        <p>Weather: {{ weather_data.weather.0.description }}</p>
+    {% endif %}
+</body>
+</html>
